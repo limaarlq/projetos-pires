@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Clone - MC IG</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1db954, #191414);
+      color: white;
+    }
+    header, nav, main, section, footer {
+      padding: 20px;
+    }
+    header {
+      background-color: #121212;
+      text-align: center;
+    }
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #333;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background-color: #282828;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .card a {
+      text-decoration: none;
+      color: #1db954;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #121212;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Spotify Clone - MC IG</h1>
+  </header>
+  <nav>
+    <a href="#populares">Populares</a>
+    <a href="#favoritos">Favoritos</a>
+  </nav>
+  <main>
+    <section id="populares">
+      <h2>Músicas Populares - MC IG</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://img.youtube.com/vi/jYq7GzdlV-4/hqdefault.jpg" alt="3 Milhões no Meu Pulso">
+          <a href="https://www.youtube.com/watch?v=jYq7GzdlV-4" target="_blank">3 Milhões no Meu Pulso</a>
+        </article>
+        <article class="card">
+          <img src="https://img.youtube.com/vi/TkgQ2kD7MTI/hqdefault.jpg" alt="Let's Go 4">
+          <a href="https://www.youtube.com/watch?v=TkgQ2kD7MTI" target="_blank">Let's Go 4</a>
+        </article>
+        <article class="card">
+          <img src="https://img.youtube.com/vi/WkMH0t91VaM/hqdefault.jpg" alt="Goodnight Menina 4">
+          <a href="https://www.youtube.com/watch?v=WkMH0t91VaM" target="_blank">Goodnight Menina 4</a>
+        </article>
+        <article class="card">
+          <img src="https://img.youtube.com/vi/hKMVoUKBQ6o/hqdefault.jpg" alt="Não Vou Me Comprometer">
+          <a href="https://www.youtube.com/watch?v=hKMVoUKBQ6o" target="_blank">Não Vou Me Comprometer</a>
+        </article>
+        <article class="card">
+          <img src="https://img.youtube.com/vi/bYlREr5Ymu4/hqdefault.jpg" alt="Chama Seu Pretão">
+          <a href="https://www.youtube.com/watch?v=bYlREr5Ymu4" target="_blank">Chama Seu Pretão</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="favoritos">
+      <h2>Minhas Favoritas - MC IG</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="https://img.youtube.com/vi/Q46nqu3Iowk/hqdefault.jpg" alt="OQIGAP?">
+          <a href="https://www.youtube.com/watch?v=Q46nqu3Iowk" target="_blank">OQIGAP?</a>
+        </article>
+        <article class="card">
+          <img src="https://img.youtube.com/vi/pjRL6p8XB5c/hqdefault.jpg" alt="Noite Fria">
+          <a href="https://www.youtube.com/watch?v=pjRL6p8XB5c" target="_blank">Noite Fria</a>
+        </article>
+        <article class="card">
+          <img src="https://img.youtube.com/vi/X5yoK_YZ3Lk/hqdefault.jpg" alt="Ninguém Tá Puro">
+          <a href="https://www.youtube.com/watch?v=X5yoK_YZ3Lk" target="_blank">Ninguém Tá Puro</a>
+        </article>
+        <article class="card">
+          <img src="https://img.youtube.com/vi/JTC1A2e0czg/hqdefault.jpg" alt="Coração Gelado 2">
+          <a href="https://www.youtube.com/watch?v=JTC1A2e0czg" target="_blank">Coração Gelado 2</a>
+        </article>
+        <article class="card">
+          <img src="https://img.youtube.com/vi/lmuJrGUmkF4/hqdefault.jpg" alt="Giro dos Artistas">
+          <a href="https://www.youtube.com/watch?v=lmuJrGUmkF4" target="_blank">Giro dos Artistas</a>
+        </article>
+        <article class="card">
+          <img src="https://img.youtube.com/vi/3mAmuxUT09I/hqdefault.jpg" alt="Revoada do Tubarão">
+          <a href="https://www.youtube.com/watch?v=3mAmuxUT09I" target="_blank">Revoada do Tubarão</a>
+        </article>
+        <article class="card">
+          <img src="data:image/webp;base64,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" alt="Hit do Ano - O Peso da Luta">
+          <a href="https://www.youtube.com/watch?v=jZDNebPMsSM" target="_blank">Hit do Ano - O Peso da Luta</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Spotify Clone - MC IG. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+
+</html>
