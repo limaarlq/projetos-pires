@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steam - Loja</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo.png" alt="Logo Steam" class="logo">
+      <ul class="menu">
+        <li><a href="loja.html">Loja</a></li>
+        <li><a href="categorias.html">Categorias</a></li>
+        <li><a href="biblioteca.html">Biblioteca</a></li>
+      </ul>
+      <button class="hamburguer" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="destaques">
+      <article class="jogo destaque">
+        <img src="gta.jpg" alt="GTA V">
+        <h2>Grand Theft Auto V</h2>
+        <p>R$ 39,00</p>
+      </article>
+
+      <article class="jogo">
+        <img src="cyberpunk.jpg" alt="Cyberpunk 2077">
+        <h2>Cyberpunk 2077</h2>
+        <p>R$ 60,00</p>
+      </article>
+
+      <article class="jogo">
+        <img src="palworld.jpg" alt="Palworld">
+        <h2>Palworld</h2>
+        <p>R$ 34,90</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Steam Clone</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector(".menu").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
+
+/* styles.css */
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: #1b1b1b;
+  color: white;
+}
+
+.logo {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburguer {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.destaques {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 1em;
+}
+
+.jogo {
+  flex: 1 1 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.jogo img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #1b1b1b;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #1b1b1b;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+  }
+
+  .menu
